@@ -1,0 +1,73 @@
+@import '../../scss/variables.scss';
+
+.navbar_header {
+	.navbar_list {
+		display: flex;
+		gap: 3.2rem;
+		.navbar_list_item {
+			.navbar_link {
+				font-size: 1.4rem;
+				line-height: 1.7rem;
+			}
+		}
+	}
+
+	@media screen and (max-width: $point1280) {
+		& {
+			display: none;
+		}
+	}
+}
+.navbar_footer {
+	.navbar_list {
+		display: flex;
+		.navbar_list_item {
+			.navbar_link {
+				font-size: 1.4rem;
+				line-height: 1.7rem;
+			}
+		}
+	}
+}
+.navbar_dropdown {
+	.navbar_list {
+		display: flex;
+		.navbar_list_item {
+			.navbar_link {
+				font-size: 1.4rem;
+				line-height: 1.7rem;
+			}
+		}
+	}
+}
+
+.navbar_link_common {
+	position: relative;
+
+	text-decoration: none;
+	text-transform: uppercase;
+	color: $primary_white;
+	font-family: 'IBMPlexSans-Medium';
+
+	&::before {
+		content: '';
+
+		position: absolute;
+		left: 50%;
+		bottom: -0.2rem;
+
+		width: 0;
+		height: 0.2rem;
+		background-color: $primary_white;
+
+		transition: $hover_transition;
+		transform: translate(-50%, 0);
+	}
+
+	&:hover {
+		&::before {
+			width: 100%;
+			transition: $hover_transition;
+		}
+	}
+}

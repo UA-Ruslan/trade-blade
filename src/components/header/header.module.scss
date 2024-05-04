@@ -1,0 +1,61 @@
+@import '../../scss/variables.scss';
+
+.header {
+	position: fixed;
+	top: 0;
+	left: 50%;
+
+	max-width: 100%;
+	width: 100%;
+	height: $header_height;
+
+	background-color: $primary_black;
+	transform: translate(-50%, 0);
+
+	z-index: 100;
+	.header__container {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+
+		.header__buttons_wrapper {
+			display: flex;
+			gap: 1.2rem;
+
+			.header__enter_btn {
+				width: 8.6rem;
+				height: 4.2rem;
+
+				color: $primary_white;
+
+				background-color: rgba(87, 225, 255, 0.2);
+				border: 0.15rem solid $blue;
+
+				.button_title {
+					z-index: 2;
+					font-size: 1.4rem;
+				}
+			}
+
+			.header__registration_btn {
+				width: 14.6rem;
+				height: 4.2rem;
+
+				.button_title {
+					z-index: 2;
+					font-size: 1.4rem;
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: $point1280) {
+	.header {
+		.header__container {
+			.header__buttons_wrapper {
+				display: none;
+			}
+		}
+	}
+}

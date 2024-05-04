@@ -1,0 +1,56 @@
+@import '../../scss/variables.scss';
+
+.logo_wrapper {
+	.logo_link {
+		position: relative;
+		top: 0;
+		left: 0;
+
+		display: flex;
+		align-items: center;
+		justify-content: flex-end;
+		width: 100%;
+		height: 100%;
+
+		.logo_icon {
+			position: absolute;
+			left: 0;
+			width: 6.4rem;
+			height: 6.4rem;
+
+			transition: $hover_transition;
+		}
+
+		.logo_top_icon {
+			opacity: 0;
+		}
+
+		.logo_icon__active {
+			opacity: 1;
+			transition: $hover_transition;
+		}
+
+		.logo_text {
+			position: absolute;
+			right: 0;
+			width: 7.9rem;
+			height: 3.3rem;
+		}
+
+		.logo_top_text {
+			position: absolute;
+			right: 0;
+			width: 7.9rem;
+			height: 3.3rem;
+			opacity: 0;
+			transition: $hover_transition;
+		}
+
+		.logo_top_text__active {
+			position: absolute;
+			right: 0;
+			opacity: 1;
+			transition: $hover_transition;
+		}
+	}
+}
