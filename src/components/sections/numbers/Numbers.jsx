@@ -2,7 +2,7 @@ import styles from './numbers.module.scss';
 
 const Numbers = () => {
 	return (
-		<section className={styles.section_numbers}>
+		<section id="numbers" className={styles.section_numbers}>
 			<div className={`${styles.numbers__container} container`}>
 				<div className={styles.numbers__title_wrapper}>
 					<h2 className={styles.numbers__title}>Цифры</h2>

@@ -215,7 +215,7 @@
 
 				opacity: 0.56;
 				z-index: 2;
-				transition: $hover_transition;
+				transition: $hover_transition_0_4;
 			}
 		}
 	}
@@ -234,7 +234,7 @@
 	}
 }
 
-@media screen and (max-width: $point360) {
+@media screen and (max-width: $point375) {
 	.card_common {
 		min-height: max-content;
 		.card__price_wrapper {

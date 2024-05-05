@@ -1,5 +1,129 @@
+@import '../../scss/variables.scss';
+
 .footer {
-	height: 100px;
+	height: 35.3rem;
 	width: 100%;
-	background-color: rgba(0, 0, 0, 0.411);
+
+	background-color: $primary_black;
+	.footer_container {
+		position: relative;
+
+		display: flex;
+		height: 100%;
+
+		.footer__navigation_wrapper {
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+
+			width: 70%;
+			height: 100%;
+			border-right: 1px solid rgba(255, 255, 255, 0.3);
+
+			padding-top: 4.4rem;
+			padding-bottom: 4rem;
+
+			.footer__navigation_title {
+				font-family: 'IBMPlexSans-Regular';
+				font-size: 1.4rem;
+				line-height: 2rem;
+				color: $primary_white;
+				opacity: 0.4;
+				text-transform: uppercase;
+			}
+		}
+
+		.footer__logo_wrapper {
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+			align-items: flex-end;
+
+			width: 30%;
+			height: 100%;
+
+			padding-top: 2.8rem;
+			padding-bottom: 4rem;
+
+			.footer__logo_subtitle {
+				font-family: 'IBMPlexSans-Regular';
+				font-size: 1.4rem;
+				line-height: 2rem;
+				color: $primary_white;
+				opacity: 0.5;
+			}
+		}
+		.footer_line {
+			display: none;
+		}
+	}
+}
+
+@media screen and (max-width: $point1280) {
+	.footer {
+		height: min-content;
+
+		.footer_container {
+			.footer__navigation_wrapper {
+				flex-direction: row;
+				gap: 3rem;
+
+				padding-right: 2.6rem;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: $point1024) {
+	.footer {
+		.footer_container {
+			.footer__navigation_wrapper {
+				width: 50%;
+			}
+			.footer__logo_wrapper {
+				width: 50%;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: $point768) {
+	.footer {
+		.footer_container {
+			flex-direction: column;
+
+			.footer__navigation_wrapper {
+				width: 100%;
+				border-right: none;
+			}
+
+			.footer__logo_wrapper {
+				align-items: flex-start;
+				width: 100%;
+				min-height: 22rem;
+			}
+
+			.footer_line {
+				position: absolute;
+				top: 59%;
+				left: 50%;
+
+				display: block;
+				width: 100%;
+				height: 1px;
+				background-color: rgba(255, 255, 255, 0.3);
+				transform: translate(-50%, 0);
+			}
+		}
+	}
+}
+
+@media screen and (max-width: $point320) {
+	.footer {
+		.footer_container {
+			.footer__navigation_wrapper {
+				padding-right: 0;
+			}
+		}
+	}
 }

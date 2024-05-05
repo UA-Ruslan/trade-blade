@@ -2,8 +2,15 @@ import { useState } from 'react';
 import styles from './logo.module.scss';
 import sprite from '../../assets/images/sprites/sprite.svg';
 
-const Logo = ({width, height}) => {
+const Logo = ({ width, height, transform }) => {
 	const [isLogoActive, setLogoActive] = useState(false);
+
+	const logoStyle = {
+		minWidth: width,
+		width: width,
+		height: height,
+		transform: transform ? transform : '',
+	};
 
 	const handleMouseEnter = () => {
 		setLogoActive(true);
@@ -12,7 +19,7 @@ const Logo = ({width, height}) => {
 		setLogoActive(false);
 	};
 	return (
-		<article style={{ minWidth: width, width: width, height: height }} className={styles.logo_wrapper}>
+		<article style={logoStyle} className={styles.logo_wrapper}>
 			<a
 				onMouseEnter={handleMouseEnter}
 				onMouseLeave={handleMouseLeave}

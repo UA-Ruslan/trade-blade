@@ -1,70 +1,3 @@
-// import styles from './faq.module.scss';
-// import sprite from '../../../assets/images/sprites/sprite.svg';
-
-// const Faq = () => {
-// 	return (
-// 		<section className={styles.section__faq}>
-// 			<div className={`${styles.faq__container} container`}>
-// 				<article className={styles.faq__content_wrapper}>
-// 					<h2 className={styles.faq__title}>часто задаваемые вопросы</h2>
-// 					<div className={styles.faq__accordion}>
-// 						<div className={styles.faq__accordion_item}>
-// 							<div className={styles.faq__accordion_title_wrapper}>
-// 								<span className={styles.accordion_item__title}>Что такое TradeBlade</span>
-// 								<svg className={styles.accordion_item__arrow_icon}>
-// 									<use xlinkHref={`${sprite}#card-dropdown-arrow`} />
-// 								</svg>
-// 							</div>
-// 							<p className={styles.accordion_item__content}>
-// 								Мы опытная команда, для которой трейдинг – профессия. TradeBlade является авторизованным
-// 								официальным брокером биржи Binance.
-// 								<br />
-// 								<br />
-// 								Он представляет пользователям множество преимуществ, таких как более високая скорость
-// 								синхронизации API и возможность создать учетную запись Binance через платформу TradeBlade
-// 								всего в 1 клик.
-// 							</p>
-// 						</div>
-// 						<div className={styles.faq__accordion_item}>
-// 							<div className={styles.faq__accordion_title_wrapper}>
-// 								<span className={styles.accordion_item__title}>Что TradeBlade предлагает инвесторам</span>
-// 								<svg className={styles.accordion_item__arrow_icon}>
-// 									<use xlinkHref={`${sprite}#card-dropdown-arrow`} />
-// 								</svg>
-// 							</div>
-// 							<p className={styles.accordion_item__content}>
-// 								Мы сосредоточены на развитии и совершенствовании инструментов для трейдеров. TradeBlade
-// 								предоставляет доступ к самым современным технологиям и аналитическим инструментам для
-// 								эффективного трейдинга на бирже Binance. Наши продукты помогают снижать риски и увеличивать
-// 								прибыль, делая процесс трейдинга более быстрым и эффективным.
-// 							</p>
-// 						</div>
-// 						<div className={styles.faq__accordion_item}>
-// 							<div className={styles.faq__accordion_title_wrapper}>
-// 								<span className={styles.accordion_item__title}>
-// 									Должен ли я перевести свои средства на TradeBlade
-// 								</span>
-// 								<svg className={styles.accordion_item__arrow_icon}>
-// 									<use xlinkHref={`${sprite}#card-dropdown-arrow`} />
-// 								</svg>
-// 							</div>
-
-// 							<p className={styles.accordion_item__content}>
-// 								TradeBlade -ваш надежный партнер на пути к успешному трейдингу на бирже Binance. Мы предлагаем
-// 								широкий спектр инструментов и услуг, которые позволяют настроить торговый процесс под ваши
-// 								потребности. Наши эксперты предоставляют персонализированную поддержку и консультации, чтобы
-// 								вы могли достигнуть своих финансовых целей быстрее и эффективнее.
-// 							</p>
-// 						</div>
-// 					</div>
-// 				</article>
-// 			</div>
-// 		</section>
-// 	);
-// };
-
-// export default Faq;
-
 import { useState, useEffect } from 'react';
 import styles from './faq.module.scss';
 import sprite from '../../../assets/images/sprites/sprite.svg';
@@ -112,7 +45,7 @@ const Faq = () => {
 	];
 
 	return (
-		<section className={styles.section__faq}>
+		<section id='faq' className={styles.section__faq}>
 			<div className={`${styles.faq__container} container`}>
 				<article className={styles.faq__content_wrapper}>
 					<h2 className={styles.faq__title}>часто задаваемые вопросы</h2>

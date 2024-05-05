@@ -24,6 +24,7 @@
 
 * {
 	box-sizing: border-box;
+	scroll-behavior: smooth;
 }
 
 html {
@@ -101,7 +102,7 @@ h3 {
 
 	background-color: $blue;
 	border-radius: 0.3rem;
-	transition: $hover_transition;
+	transition: $hover_transition_0_4;
 	border: none;
 
 	overflow: hidden;
@@ -127,7 +128,7 @@ h3 {
 			color: $primary_white;
 			box-shadow: 0 0 1rem 0.1rem $blue;
 
-			transition: $hover_transition;
+			transition: $hover_transition_0_4;
 			cursor: pointer;
 
 			&::before {
@@ -138,11 +139,18 @@ h3 {
 	@media (hover: none) {
 		&:active {
 			transform: scale(0.9);
-			transition: $hover_transition;
+
+			transition: $hover_transition_0_4;
 		}
 	}
 	&:active {
 		transform: scale(0.9);
-		transition: $hover_transition;
+		transition: $hover_transition_0_4;
+	}
+}
+
+@media screen and (max-width: $point1280) {
+	.app {
+		padding-top: $header_height_mob;
 	}
 }

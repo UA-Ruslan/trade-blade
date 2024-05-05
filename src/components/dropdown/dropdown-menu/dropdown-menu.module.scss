@@ -1,0 +1,77 @@
+@import '../../../scss/variables.scss';
+
+.dropdown_menu {
+	position: fixed;
+	top: 0;
+	right: -100%;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	gap: 5rem;
+
+	max-width: 37.5rem;
+	width: 100%;
+	height: 100%;
+
+	padding: 8.4rem 1.6rem 1.6rem;
+	background-color: $purpure;
+	z-index: 101;
+	overflow-x: hidden;
+	overflow-y: auto;
+	transition: $hover_transition;
+
+	.dropdown_menu__buttons_wrapper {
+		display: flex;
+		flex-direction: row-reverse;
+		gap: 1.6rem;
+
+		.dropdown_menu__enter_btn {
+			width: 50%;
+			height: 5.2rem;
+			color: $primary_white;
+
+			background-color: rgba(87, 225, 255, 0.2);
+			border: 0.2rem solid $blue;
+
+			.dropdown_menu__button_title {
+				z-index: 2;
+				color: $blue;
+			}
+		}
+		.dropdown_menu__registration_btn {
+			width: 50%;
+			height: 5.2rem;
+
+			.dropdown_menu__button_title {
+				z-index: 2;
+			}
+		}
+	}
+}
+
+.dropdown_menu_active {
+	right: 0;
+	transition: $hover_transition;
+}
+
+@media screen and (max-width: $point768) {
+	.dropdown_menu {
+		min-width: 100%;
+	}
+}
+
+@media screen and (max-width: $point320) {
+	.dropdown_menu {
+		.dropdown_menu__buttons_wrapper {
+			flex-direction: column;
+
+			.dropdown_menu__enter_btn {
+				width: 100%;
+			}
+			.dropdown_menu__registration_btn {
+				width: 100%;
+			}
+		}
+	}
+}

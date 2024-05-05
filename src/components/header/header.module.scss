@@ -18,6 +18,8 @@
 		align-items: center;
 		justify-content: space-between;
 
+		height: 100%;
+
 		.header__buttons_wrapper {
 			display: flex;
 			gap: 1.2rem;
@@ -34,6 +36,7 @@
 				.button_title {
 					z-index: 2;
 					font-size: 1.4rem;
+					color: $blue;
 				}
 			}
 
@@ -52,6 +55,7 @@
 
 @media screen and (max-width: $point1280) {
 	.header {
+		height: $header_height_mob;
 		.header__container {
 			.header__buttons_wrapper {
 				display: none;

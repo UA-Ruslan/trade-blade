@@ -1,6 +1,7 @@
 //------------------------------colors------------------------------
 $primary_black: #030718;
 $primary_white: #FFFFFF;
+$secondary_white: #E7F7F8;
 $secondary_black: #000000;
 $blue: #57E1FF;
 $blue1: #5E47FF;
@@ -25,6 +26,7 @@ $container_padding: clamp(1.6rem, 6vw, 8rem);
 
 //-----------------------elements-height----------------------------
 $header_height: 6.8rem;
+$header_height_mob: 5.2rem;
 $slider_height: 23.8rem;
 //-----------------------elements-height----------------------------//
 
@@ -32,6 +34,8 @@ $slider_height: 23.8rem;
 $point1280: 1280px;
 $point1024: 1024px;
 $point768: 768px;
+$point640: 640px;
 $point425: 425px;
-$point360: 360px;
+$point375: 375px;
+$point320: 320px;
 //------------------------------break-points------------------------//

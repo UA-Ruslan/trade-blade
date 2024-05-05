@@ -11,7 +11,7 @@ const Tariffs = () => {
 	};
 
 	return (
-		<section className={styles.section__tariffs}>
+		<section id="tariffs" className={styles.section__tariffs}>
 			<div className={`${styles.tariffs__container} container`}>
 				<div className={styles.tariffs__left_content}>
 					<h2 className={styles.tariffs__left_title}>тарифы</h2>

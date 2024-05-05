@@ -17,8 +17,6 @@
 			width: 100%;
 			margin: 0 auto;
 
-			// background-color: $purpure;
-
 			.faq__title {
 				margin-bottom: clamp(4rem, 7vw, 6.4rem);
 
@@ -44,7 +42,7 @@
 						align-items: center;
 						justify-content: space-between;
 
-						margin-bottom: 1.6rem;
+						margin-bottom: 2.2rem;
 
 						.accordion_item__title {
 							font-family: 'IBMPlexSans-Medium';
@@ -59,10 +57,14 @@
 
 							stroke: $secondary_black;
 							opacity: 0.5;
+							transition: $hover_transition;
 						}
 					}
 
 					.accordion_item__content {
+						font-family: 'IBMPlexSans-Regular';
+						font-size: 1.6rem;
+						line-height: 2rem;
 					}
 				}
 
@@ -71,6 +73,153 @@
 
 					background-color: $purpure;
 					transition: $hover_transition;
+					.faq__accordion_title_wrapper {
+						.accordion_item__title {
+							color: $primary_white;
+						}
+						.accordion_item__arrow_icon {
+							transform: rotate(180deg);
+							transition: $hover_transition;
+							stroke: $primary_white;
+							opacity: 1;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: $point768) {
+	.section__faq {
+		.faq__container {
+			.faq__content_wrapper {
+				.faq__accordion {
+					.faq__accordion_item {
+						height: 8.8rem;
+
+						&:first-child {
+							padding-top: 3rem;
+						}
+
+						.faq__accordion_title_wrapper {
+							.accordion_item__title {
+								max-width: 70%;
+							}
+						}
+					}
+
+					.accordion_item__active {
+						height: 26rem;
+					}
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: $point640) {
+	.section__faq {
+		.faq__container {
+			.faq__content_wrapper {
+				.faq__accordion {
+					.faq__accordion_item {
+						height: 8.8rem;
+
+						.faq__accordion_title_wrapper {
+							.accordion_item__title {
+								max-width: 90%;
+							}
+						}
+					}
+
+					.accordion_item__active {
+						height: 30rem;
+					}
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: $point425) {
+	.section__faq {
+		.faq__container {
+			.faq__content_wrapper {
+				.faq__accordion {
+					.faq__accordion_item {
+						height: 8.8rem;
+
+						.faq__accordion_title_wrapper {
+							.accordion_item__title {
+								font-size: 1.8rem;
+							}
+						}
+					}
+
+					.accordion_item__active {
+						height: 35rem;
+					}
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: $point375) {
+	.section__faq {
+		.faq__container {
+			.faq__content_wrapper {
+				.faq__accordion {
+					.faq__accordion_item {
+						height: 8.8rem;
+
+						.faq__accordion_title_wrapper {
+							.accordion_item__title {
+								max-width: 90%;
+								font-size: 1.6rem;
+							}
+						}
+						.accordion_item__content {
+							font-family: 'IBMPlexSans-Regular';
+							font-size: 1.4rem;
+							line-height: 1.8rem;
+						}
+					}
+
+					.accordion_item__active {
+						height: 35rem;
+					}
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: $point320) {
+	.section__faq {
+		.faq__container {
+			.faq__content_wrapper {
+				.faq__accordion {
+					.faq__accordion_item {
+						height: 8.8rem;
+
+						.faq__accordion_title_wrapper {
+							.accordion_item__title {
+								max-width: 90%;
+								font-size: 1.2rem;
+							}
+						}
+						.accordion_item__content {
+							font-family: 'IBMPlexSans-Regular';
+							font-size: 1.2rem;
+							line-height: 1.6rem;
+						}
+					}
+
+					.accordion_item__active {
+						height: 35rem;
+					}
 				}
 			}
 		}

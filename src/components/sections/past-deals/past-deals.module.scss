@@ -2,6 +2,7 @@
 
 .section__past_deals {
 	position: relative;
+	min-width: 100%;
 
 	padding-top: clamp(4rem, 8vw, 9.6rem);
 	padding-bottom: clamp(6rem, 8vw, 11.8rem);
@@ -81,7 +82,6 @@ transform: translate(calc(-50% - clamp(1.6rem, 6vw, 8rem)), -100%);
 		}
 	}
 }
-
 
 
 

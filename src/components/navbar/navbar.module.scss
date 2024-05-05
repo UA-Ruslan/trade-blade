@@ -21,10 +21,21 @@
 .navbar_footer {
 	.navbar_list {
 		display: flex;
+		gap: 2.4rem;
 		.navbar_list_item {
+			width: max-content;
 			.navbar_link {
-				font-size: 1.4rem;
-				line-height: 1.7rem;
+				font-size: 1.6rem;
+				line-height: 2rem;
+			}
+		}
+	}
+
+	@media screen and (max-width: $point1280) {
+		& {
+			.navbar_list {
+				flex-direction: column;
+				gap: 1.6rem;
 			}
 		}
 	}
@@ -32,10 +43,26 @@
 .navbar_dropdown {
 	.navbar_list {
 		display: flex;
+		flex-direction: column;
+		gap: 3.2rem;
 		.navbar_list_item {
 			.navbar_link {
-				font-size: 1.4rem;
-				line-height: 1.7rem;
+				font-size: 2.4rem;
+				line-height: 3rem;
+			}
+		}
+	}
+
+	@media screen and (max-width: $point320) {
+		& {
+			.navbar_list {
+				gap: 2rem;
+				.navbar_list_item {
+					.navbar_link {
+						font-size: 1.6rem;
+						line-height: 2rem;
+					}
+				}
 			}
 		}
 	}
