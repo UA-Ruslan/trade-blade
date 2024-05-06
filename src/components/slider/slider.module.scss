@@ -3,7 +3,8 @@
 .slider {
 	height: $slider_height;
 	max-width: 100%;
-	overflow: hidden !important;
+	overflow: hidden;
+
 	.slide {
 		position: relative;
 		display: flex;
@@ -40,7 +41,7 @@
 				top: -8rem;
 				right: -8rem;
 			}
-			
+
 			& {
 				.slide__icon {
 					fill: $blue;

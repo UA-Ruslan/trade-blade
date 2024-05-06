@@ -86,6 +86,28 @@ h3 {
 	line-height: clamp(2.8rem, 3.5vw, 3.6rem);
 }
 
+.custom_slider_scrollbar {
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+
+	width: 66%;
+	height: .6rem;
+
+	border-radius: .4rem;
+	background-color: #434F70 !important;
+	z-index: 5;
+	left: 50%;
+	transform: translate(-57%, 0);
+	
+	@media screen and (max-width: $point768) {
+		& {
+			width: 90%;
+			transform: translate(-53%, 0);
+		}
+	}
+}
+
 .button_common {
 	position: relative;
 
@@ -154,3 +176,5 @@ h3 {
 		padding-top: $header_height_mob;
 	}
 }
+
+
