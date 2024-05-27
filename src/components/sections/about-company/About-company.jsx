@@ -6,23 +6,22 @@ const AboutCompany = () => {
 		<section id="about" className={styles.section_about_company}>
 			<div className={`${styles.about_company__container} container`}>
 				<article className={styles.about_company__content_wrapper}>
-					<h2 className={styles.about_company__content_title}>О компании</h2>
+					<h2 className={styles.about_company__content_title}>Про компанію</h2>
 					<p className={styles.about_company__content_text}>
-						Мы опытная команда, для которой трейдинг – профессия. TradeBlade является авторизованным
-						официальным брокером биржи Binance.
+						Ми досвідчена команда, для якої трейдинг – професія. TradeBlade є авторизованим офіційним брокером
+						біржі Binance.
 						<br />
 						<br />
-						Он представляет пользователям множество преимуществ, таких как более високая скорость
-						синхронизации API и возможность создать учетную запись Binance через платформу TradeBlade всего в
-						1 клик.
+						Він пропонує користувачам безліч переваг, таких як вища швидкість синхронізації API та можливість
+						створити обліковий запис Binance через платформу TradeBlade всього в 1 клік.
 					</p>
 				</article>
 				<article className={styles.about_company__form_wrapper}>
 					<h3 className={styles.about_company__form_title}>
-						Попробуйте сейчас и получите <br /> 5 дней бесплатного пользования
+						Спробуйте зараз і отримайте <br /> 5 днів безкоштовного користування
 					</h3>
 
-					<Form btnTitle={'попробовать'} ownStyle={'about_company__form'} />
+					<Form btnTitle={'Спробувати'} ownStyle={'about_company__form'} />
 				</article>
 			</div>
 		</section>

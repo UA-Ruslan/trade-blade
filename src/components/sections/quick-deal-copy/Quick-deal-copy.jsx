@@ -7,15 +7,15 @@ const QuickDealCopy = () => {
 		<section className={styles.section_quick_copy}>
 			<div className={`${styles.quick_copy__container} container`}>
 				<article className={styles.quick_copy__content_wrapper}>
-					<h1 className={styles.quick_copy__title}>моментально копируй сделки профи трейдеров</h1>
+					<h1 className={styles.quick_copy__title}>миттєво копіюй угоди профі трейдерів</h1>
 
 					<p className={styles.quick_copy__text}>
-						Начни копировать сделки с успешной командой профессиональных трейдеров в автоматическом режиме.
+						Почни копіювати угоди з успішною командою професійних трейдерів в автоматичному режимі.
 					</p>
 
-					<Form btnTitle={'начать'} ownStyle={'quick_copy__form'} />
+					<Form btnTitle={'почати'} ownStyle={'quick_copy__form'} />
 
-					<span className={styles.quick_copy__free_days_text}>5 дней бесплатного пользования</span>
+					<span className={styles.quick_copy__free_days_text}>5 днів безкоштовного користування</span>
 				</article>
 
 				<div className={styles.quick_copy__img_wrapper}>

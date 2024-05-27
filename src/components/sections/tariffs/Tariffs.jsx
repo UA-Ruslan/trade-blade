@@ -14,7 +14,7 @@ const Tariffs = () => {
 		<section id="tariffs" className={styles.section__tariffs}>
 			<div className={`${styles.tariffs__container} container`}>
 				<div className={styles.tariffs__left_content}>
-					<h2 className={styles.tariffs__left_title}>тарифы</h2>
+					<h2 className={styles.tariffs__left_title}>тарифи</h2>
 					<div className={styles.tariffs__left_inputs_wrapper}>
 						<input
 							onChange={handleToggle}
@@ -52,7 +52,7 @@ const Tariffs = () => {
 							}
 							htmlFor="futures"
 						>
-							фьючерс
+							ф&apos;ючерс
 						</label>
 					</div>
 					<article className={`${styles.tariffs__left_card} ${styles.card_common}`}>
@@ -63,25 +63,25 @@ const Tariffs = () => {
 									<svg className={styles.card__list_check_icon}>
 										<use xlinkHref={`${sprite}#check`} />
 									</svg>
-									Ручной трейдинг
+									Ручний трейдинг
 								</li>
 								<li className={styles.card__list_item}>
 									<svg className={styles.card__list_check_icon}>
 										<use xlinkHref={`${sprite}#check`} />
 									</svg>
-									Автоматическое или полуавтоматическое копирование сделок
+									Автоматичне або напівавтоматичне копіювання угод
 								</li>
 								<li className={styles.card__list_item}>
 									<svg className={styles.card__list_check_icon}>
 										<use xlinkHref={`${sprite}#check`} />
 									</svg>
-									Личный кабинет со статистикой
+									Особистий кабінет зі статистикою
 								</li>
 								<li className={styles.card__list_item}>
 									<svg className={styles.card__list_check_icon}>
 										<use xlinkHref={`${sprite}#check`} />
 									</svg>
-									Среднесрочные сделки с уровнями набора портфеля
+									Середньострокові угоди з рівнями формування портфеля
 								</li>
 							</ul>
 						</div>
@@ -91,13 +91,13 @@ const Tariffs = () => {
 								<div className={styles.card__dropdown_wrapper}>
 									<select className={styles.card__dropdown} name="interval" id="interval">
 										<option className={styles.card__dropdown_item} value="12">
-											12 месяцев
+											12 місяців
 										</option>
 										<option className={styles.card__dropdown_item} value="6">
-											6 месяцев
+											6 місяців
 										</option>
 										<option className={styles.card__dropdown_item} value="1">
-											1 месяц
+											1 місяц
 										</option>
 									</select>
 									<svg className={styles.card__dropdown_arrow}>
@@ -106,9 +106,9 @@ const Tariffs = () => {
 								</div>
 							</div>
 							<button className={`${styles.card__btn} button_common`}>
-								<span className={styles.card__btn_title}>Попробовать</span>
+								<span className={styles.card__btn_title}>Спробувати</span>
 								<span className={`${styles.card__btn_title} ${styles.card__btn_subtitle}`}>
-									5 дней бесплатно
+									5 днів безкоштовно
 								</span>
 							</button>
 						</div>
@@ -123,37 +123,37 @@ const Tariffs = () => {
 								<svg className={styles.card__list_check_icon}>
 									<use xlinkHref={`${sprite}#check`} />
 								</svg>
-								Ручной трейдинг
+								Ручний трейдинг
 							</li>
 							<li className={styles.card__list_item}>
 								<svg className={styles.card__list_check_icon}>
 									<use xlinkHref={`${sprite}#check`} />
 								</svg>
-								Автоматическое или полуавтоматическое копирование сделок
+								Автоматичне або напівавтоматичне копіювання угод
 							</li>
 							<li className={styles.card__list_item}>
 								<svg className={styles.card__list_check_icon}>
 									<use xlinkHref={`${sprite}#check`} />
 								</svg>
-								Личный кабинет со статистикой
+								Особистий кабінет зі статистикою
 							</li>
 							<li className={styles.card__list_item}>
 								<svg className={styles.card__list_check_icon}>
 									<use xlinkHref={`${sprite}#check`} />
 								</svg>
-								Краткосрочные, среднесрочные и инвест сделки
+								Короткострокові, середньострокові та інвестиційні угоди
 							</li>
 							<li className={styles.card__list_item}>
 								<svg className={styles.card__list_check_icon}>
 									<use xlinkHref={`${sprite}#check`} />
 								</svg>
-								Доступ в Vip чат с командой
+								Доступ до VIP-чату з командою
 							</li>
 							<li className={styles.card__list_item}>
 								<svg className={styles.card__list_check_icon}>
 									<use xlinkHref={`${sprite}#check`} />
 								</svg>
-								Наш авторский курс по трейдингу
+								Наш авторський курс з трейдингу
 							</li>
 						</ul>
 					</div>
@@ -163,13 +163,13 @@ const Tariffs = () => {
 							<div className={styles.card__dropdown_wrapper}>
 								<select className={styles.card__dropdown} name="interval" id="interval">
 									<option className={styles.card__dropdown_item} value="12">
-										12 месяцев
+										12 місяців
 									</option>
 									<option className={styles.card__dropdown_item} value="6">
-										6 месяцев
+										6 місяців
 									</option>
 									<option className={styles.card__dropdown_item} value="1">
-										1 месяц
+										1 місяц
 									</option>
 								</select>
 								<svg className={styles.card__dropdown_arrow}>
@@ -178,9 +178,9 @@ const Tariffs = () => {
 							</div>
 						</div>
 						<button className={`${styles.card__btn} button_common`}>
-							<span className={styles.card__btn_title}>Попробовать</span>
+							<span className={styles.card__btn_title}>Спробувати</span>
 							<span className={`${styles.card__btn_title} ${styles.card__btn_subtitle}`}>
-								5 дней бесплатно
+								5 днів безкоштовно
 							</span>
 						</button>
 					</div>

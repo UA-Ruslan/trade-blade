@@ -29,22 +29,21 @@
 				gap: 1.2rem;
 
 				.faq__accordion_item {
-					height: 6.4rem;
-					padding: 1.6rem;
-
 					border-radius: 0.4rem;
 					background-color: #eaeff0;
-					overflow: hidden;
-					transition: $hover_transition;
+					transition: $hover_transition_0_4;
 
 					.faq__accordion_title_wrapper {
 						display: flex;
 						align-items: center;
 						justify-content: space-between;
 
-						margin-bottom: 2.2rem;
+						width: 100%;
+						padding: 1.6rem;
 
 						.accordion_item__title {
+							max-width: 80%;
+
 							font-family: 'IBMPlexSans-Medium';
 							font-size: clamp(2rem, 4vw, 2.4rem);
 							line-height: clamp(2.8rem, 5vw, 3.2rem);
@@ -57,168 +56,57 @@
 
 							stroke: $secondary_black;
 							opacity: 0.5;
-							transition: $hover_transition;
+							transition: $hover_transition_0_4;
 						}
 					}
+					.faq__accordion_content_wrapper {
+						display: grid;
+						grid-template-rows: 0fr;
 
-					.accordion_item__content {
-						font-family: 'IBMPlexSans-Regular';
-						font-size: 1.6rem;
-						line-height: 2rem;
+						padding: 0 1.6rem;
+
+						transition: $hover_transition_0_4;
+						.faq__accordion_content {
+							overflow: hidden;
+
+							.accordion_item__content {
+								font-family: 'IBMPlexSans-Regular';
+								font-size: 1.6rem;
+								line-height: 2rem;
+							}
+						}
 					}
 				}
 
 				.accordion_item__active {
-					height: 19.6rem;
-
 					background-color: $purpure;
-					transition: $hover_transition;
+					transition: $hover_transition_0_4;
+
 					.faq__accordion_title_wrapper {
 						.accordion_item__title {
 							color: $primary_white;
 						}
 						.accordion_item__arrow_icon {
 							transform: rotate(180deg);
-							transition: $hover_transition;
+							transition: $hover_transition_0_4;
 							stroke: $primary_white;
 							opacity: 1;
 						}
 					}
-				}
-			}
-		}
-	}
-}
 
-@media screen and (max-width: $point768) {
-	.section__faq {
-		.faq__container {
-			.faq__content_wrapper {
-				.faq__accordion {
-					.faq__accordion_item {
-						height: 8.8rem;
+					.faq__accordion_content_wrapper {
+						grid-template-rows: 1fr;
 
-						&:first-child {
-							padding-top: 3rem;
-						}
+						padding: 0 1.6rem 1.6rem;
+						transition: $hover_transition_0_4;
 
-						.faq__accordion_title_wrapper {
-							.accordion_item__title {
-								max-width: 70%;
-							}
-						}
-					}
-
-					.accordion_item__active {
-						height: 26rem;
-					}
-				}
-			}
-		}
-	}
-}
-
-@media screen and (max-width: $point640) {
-	.section__faq {
-		.faq__container {
-			.faq__content_wrapper {
-				.faq__accordion {
-					.faq__accordion_item {
-						height: 8.8rem;
-
-						.faq__accordion_title_wrapper {
-							.accordion_item__title {
-								max-width: 90%;
-							}
-						}
-					}
-
-					.accordion_item__active {
-						height: 30rem;
-					}
-				}
-			}
-		}
-	}
-}
-
-@media screen and (max-width: $point425) {
-	.section__faq {
-		.faq__container {
-			.faq__content_wrapper {
-				.faq__accordion {
-					.faq__accordion_item {
-						height: 8.8rem;
-
-						.faq__accordion_title_wrapper {
-							.accordion_item__title {
-								font-size: 1.8rem;
-							}
-						}
-					}
-
-					.accordion_item__active {
-						height: 35rem;
-					}
-				}
-			}
-		}
-	}
-}
-
-@media screen and (max-width: $point375) {
-	.section__faq {
-		.faq__container {
-			.faq__content_wrapper {
-				.faq__accordion {
-					.faq__accordion_item {
-						height: 8.8rem;
-
-						.faq__accordion_title_wrapper {
-							.accordion_item__title {
-								max-width: 90%;
+						.faq__accordion_content {
+							.accordion_item__content {
+								font-family: 'IBMPlexSans-Regular';
 								font-size: 1.6rem;
+								line-height: 2rem;
 							}
 						}
-						.accordion_item__content {
-							font-family: 'IBMPlexSans-Regular';
-							font-size: 1.4rem;
-							line-height: 1.8rem;
-						}
-					}
-
-					.accordion_item__active {
-						height: 35rem;
-					}
-				}
-			}
-		}
-	}
-}
-
-@media screen and (max-width: $point320) {
-	.section__faq {
-		.faq__container {
-			.faq__content_wrapper {
-				.faq__accordion {
-					.faq__accordion_item {
-						height: 8.8rem;
-
-						.faq__accordion_title_wrapper {
-							.accordion_item__title {
-								max-width: 90%;
-								font-size: 1.2rem;
-							}
-						}
-						.accordion_item__content {
-							font-family: 'IBMPlexSans-Regular';
-							font-size: 1.2rem;
-							line-height: 1.6rem;
-						}
-					}
-
-					.accordion_item__active {
-						height: 35rem;
 					}
 				}
 			}

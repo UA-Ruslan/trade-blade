@@ -6,7 +6,7 @@ const Footer = ({ setDropdownActive }) => {
 		<footer className={styles.footer}>
 			<div className={`${styles.footer_container} container`}>
 				<article className={styles.footer__navigation_wrapper}>
-					<span className={styles.footer__navigation_title}>Быстрая навигация</span>
+					<span className={styles.footer__navigation_title}>Швидка навігація</span>
 					<Navbar setDropdownActive={setDropdownActive} renderIn={'footer'} />
 				</article>
 				<span className={styles.footer_line}></span>

@@ -22,10 +22,10 @@ const DropdownMenu = ({ isDropdownActive, setDropdownActive }) => {
 
 			<article className={styles.dropdown_menu__buttons_wrapper}>
 				<button onClick={handleClick} className={`button_common ${styles.dropdown_menu__enter_btn}`}>
-					<span className={styles.dropdown_menu__button_title}>вход</span>
+					<span className={styles.dropdown_menu__button_title}>вхід</span>
 				</button>
 				<button onClick={handleClick} className={`button_common ${styles.dropdown_menu__registration_btn}`}>
-					<span className={styles.dropdown_menu__button_title}>регистрация</span>
+					<span className={styles.dropdown_menu__button_title}>реєстрація</span>
 				</button>
 			</article>
 		</aside>

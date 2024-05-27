@@ -31,10 +31,10 @@ const Header = ({ setDropdownActive }) => {
 				<Navbar setDropdownActive={setDropdownActive} renderIn={'header'} />
 				<div className={styles.header__buttons_wrapper}>
 					<button className={`button_common ${styles.header__enter_btn}`}>
-						<span className={styles.button_title}>вход</span>
+						<span className={styles.button_title}>вхід</span>
 					</button>
 					<button className={`button_common ${styles.header__registration_btn}`}>
-						<span className={styles.button_title}>регистрация</span>
+						<span className={styles.button_title}>реєстрація</span>
 					</button>
 				</div>
 			</div>
