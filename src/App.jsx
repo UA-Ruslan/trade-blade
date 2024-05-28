@@ -10,6 +10,7 @@ import Numbers from './components/sections/numbers/Numbers';
 import PastDeals from './components/sections/past-deals/Past-deals';
 import QuickDealCopy from './components/sections/quick-deal-copy/Quick-deal-copy';
 import Tariffs from './components/sections/tariffs/Tariffs';
+import TradeBladeIts from './components/sections/trade-blade-its/Trade-blade-its';
 
 function App() {
 	const [isDropdownActive, setDropdownActive] = useState(false);
@@ -35,6 +36,7 @@ function App() {
 				<Numbers />
 				<PastDeals />
 				<AboutCompany />
+				<TradeBladeIts />
 				<Tariffs />
 				<Faq />
 			</main>

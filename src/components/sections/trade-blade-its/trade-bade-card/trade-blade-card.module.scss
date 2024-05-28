@@ -1,0 +1,30 @@
+@import '../../../../scss/variables.scss';
+
+.trade_blade__card_wrapper {
+	display: flex;
+	gap: 3.2rem;
+
+	.card_icon__wrapper {
+		.card_icon {
+			width: 5.6rem;
+			aspect-ratio: 1;
+		}
+	}
+
+	.card_content {
+		display: flex;
+		flex-direction: column;
+
+		max-width: 32.5rem;
+		width: 100%;
+
+		.card_content_title {
+			margin-bottom: 0.8rem;
+		}
+
+		.card_content_subtitle {
+			font-size: clamp(1.4rem, 2vw, 1.6rem);
+			line-height: clamp(1.7rem, 2.2vw, 2rem);
+		}
+	}
+}
