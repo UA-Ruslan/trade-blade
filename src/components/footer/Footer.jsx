@@ -4,7 +4,7 @@ import styles from './footer.module.scss';
 const Footer = ({ setDropdownActive }) => {
 	return (
 		<footer className={styles.footer}>
-			<div className={`${styles.footer_container} container`}>
+			<div data-aos="fade-up" data-aos-duration='2000' className={`${styles.footer_container} container`}>
 				<article className={styles.footer__navigation_wrapper}>
 					<span className={styles.footer__navigation_title}>Швидка навігація</span>
 					<Navbar setDropdownActive={setDropdownActive} renderIn={'footer'} />

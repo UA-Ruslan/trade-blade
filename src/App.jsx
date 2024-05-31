@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import './app.scss';
+
 import DropdownBtn from './components/dropdown/dropdown-btn/Dropdown-btn';
 import DropdownMenu from './components/dropdown/dropdown-menu/Dropdown-menu';
 import Footer from './components/footer/Footer';
@@ -11,9 +12,11 @@ import PastDeals from './sections/past-deals/Past-deals';
 import QuickDealCopy from './sections/quick-deal-copy/Quick-deal-copy';
 import Tariffs from './sections/tariffs/Tariffs';
 import TradeBladeIts from './sections/trade-blade-its/Trade-blade-its';
-import Aos from 'aos';
-import 'aos/dist/aos.css'
 import HowToStart from './sections/how-to-start/How-to-start';
+import StartNow from './sections/start-now/Start-now';
+
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 
 function App() {
 	const [isDropdownActive, setDropdownActive] = useState(false);
@@ -50,6 +53,7 @@ function App() {
 				<HowToStart />
 				<Tariffs />
 				<Faq />
+				<StartNow />
 			</main>
 
 			<DropdownBtn isDropdownActive={isDropdownActive} setDropdownActive={setDropdownActive} />

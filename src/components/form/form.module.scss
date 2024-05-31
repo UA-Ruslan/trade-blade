@@ -65,7 +65,7 @@
 		width: 100%;
 		height: 100%;
 
-		padding: 0 12rem 0 1.6rem;
+		padding: 0 18.5rem 0 1.6rem;
 
 		font-family: 'IBMPlexSans-Medium';
 		font-size: 1.6rem;
@@ -108,13 +108,93 @@
 	}
 }
 
+.start_now__form {
+	position: relative;
+
+	max-width: 52.2rem;
+	width: 100%;
+	height: 6rem;
+
+	.input {
+		width: 100%;
+		height: 100%;
+
+		padding: 0 25rem 0 1.6rem;
+
+		font-family: 'IBMPlexSans-Medium';
+		font-size: 1.6rem;
+		line-height: 2rem;
+		color: $primary_white;
+		text-transform: uppercase;
+
+		background-color: $blue3;
+		border-radius: 0.4rem;
+		border: 0.1rem solid transparent;
+		outline: none;
+		transition: $hover_transition;
+
+		&:hover {
+			border: 0.1rem solid $dark_blue;
+		}
+
+		&:focus {
+			border: 0.1rem solid $blue;
+		}
+
+		&::placeholder {
+			color: $primary_white;
+			opacity: 0.4;
+		}
+	}
+
+	.btn {
+		position: absolute;
+		right: 0.4rem;
+		top: 0.4rem;
+		width: 23rem;
+		height: 5.2rem;
+
+		border-radius: 0.4rem;
+
+		.button_title {
+			z-index: 2;
+		}
+	}
+}
+
+@media screen and (max-width: $point1024) {
+	.start_now__form {
+		display: flex;
+		flex-direction: column;
+		gap: clamp(0.8rem, 2vw, 2rem);
+
+		height: min-content;
+
+		.input {
+			min-height: 5.2rem;
+
+			padding: 0 1.6rem;
+		}
+
+		.btn {
+			position: relative;
+			right: 0;
+			top: 0;
+
+			align-self: center;
+		}
+	}
+}
+
 @media screen and (max-width: $point425) {
 	.about_company__form {
 		height: min-content;
 
 		.input {
 			height: 5rem;
-			margin-bottom: .8rem;
+			margin-bottom: 0.8rem;
+
+			padding: 0 1.6rem;
 		}
 
 		.btn {
@@ -128,6 +208,12 @@
 			.button_title {
 				z-index: 2;
 			}
+		}
+	}
+
+	.start_now__form {
+		.btn {
+			width: 100%;
 		}
 	}
 }

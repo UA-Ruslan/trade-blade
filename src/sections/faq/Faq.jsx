@@ -29,7 +29,7 @@ const Faq = () => {
 			<div className={`${styles.faq__container} container`}>
 				<article className={styles.faq__content_wrapper}>
 					<h2 className={styles.faq__title}>часті питання</h2>
-					<div className={styles.faq__accordion}>
+					<div data-aos="flip-up" className={styles.faq__accordion}>
 						{faqData.map((item, index) => (
 							<div
 								key={index}

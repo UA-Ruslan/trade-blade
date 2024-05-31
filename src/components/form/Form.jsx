@@ -10,6 +10,9 @@ const Form = ({ ownStyle, btnTitle }) => {
 		case ownStyle === 'quick_copy__form':
 			classNameStyle = styles.quick_copy__form;
 			break;
+		case ownStyle === 'start_now__form':
+			classNameStyle = styles.start_now__form;
+			break;
 	}
 
 
