@@ -218,13 +218,18 @@
 			width: 100%;
 			height: 5.2rem;
 
-			&:hover {
-				.card__btn_subtitle {
+			@media (hover: hover) {
+				&:hover {
 					color: $primary_white;
+
+					.card__btn_subtitle {
+						color: $primary_white;
+					}
 				}
 			}
 
 			&:active {
+				color: $primary_black;
 				.card__btn_subtitle {
 					color: $primary_black;
 				}
