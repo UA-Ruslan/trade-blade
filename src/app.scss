@@ -92,14 +92,14 @@ h3 {
 	left: 50%;
 
 	width: 66%;
-	height: .6rem;
+	height: 0.6rem;
 
-	border-radius: .4rem;
-	background-color: #434F70 !important;
+	border-radius: 0.4rem;
+	background-color: #434f70 !important;
 	z-index: 5;
 	left: 50%;
 	transform: translate(-57%, 0);
-	
+
 	@media screen and (max-width: $point768) {
 		& {
 			width: 90%;
@@ -161,13 +161,17 @@ h3 {
 	@media (hover: none) {
 		&:active {
 			transform: scale(0.9);
-
 			transition: $hover_transition_0_4;
 		}
 	}
 	&:active {
 		transform: scale(0.9);
 		transition: $hover_transition_0_4;
+		color: $primary_black;
+
+		&::before {
+			background-color: $blue;
+		}
 	}
 }
 
@@ -176,5 +180,3 @@ h3 {
 		padding-top: $header_height_mob;
 	}
 }
-
-

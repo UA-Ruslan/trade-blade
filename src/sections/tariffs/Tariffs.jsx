@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import styles from './tariffs.module.scss';
-import sprite from '../../../assets/images/sprites/sprite.svg';
+import sprite from '../../assets/images/sprites/sprite.svg';
 
 const Tariffs = () => {
 	const [radioBtnToggle, setRadioBtnToggle] = useState('spot');
@@ -15,10 +15,10 @@ const Tariffs = () => {
 			<div className={`${styles.tariffs__container} container`}>
 				<div className={styles.tariffs__left_content}>
 					<h2 className={styles.tariffs__left_title}>тарифи</h2>
-					<div className={styles.tariffs__left_inputs_wrapper}>
+					<form className={styles.tariffs__radio_btn_wrapper}>
 						<input
 							onChange={handleToggle}
-							className={styles.tariffs__left_input}
+							className={styles.tariffs__radio_btn}
 							type="radio"
 							id="spot"
 							name="tariff"
@@ -28,8 +28,8 @@ const Tariffs = () => {
 						<label
 							className={
 								radioBtnToggle === 'spot'
-									? `${styles.tariffs__left_label} ${styles.label__active}`
-									: styles.tariffs__left_label
+									? `${styles.tariffs__radio_btn_label} ${styles.label__active}`
+									: styles.tariffs__radio_btn_label
 							}
 							htmlFor="spot"
 						>
@@ -38,7 +38,7 @@ const Tariffs = () => {
 
 						<input
 							onChange={handleToggle}
-							className={styles.tariffs__left_input}
+							className={styles.tariffs__radio_btn}
 							type="radio"
 							id="futures"
 							name="tariff"
@@ -47,15 +47,19 @@ const Tariffs = () => {
 						<label
 							className={
 								radioBtnToggle === 'futures'
-									? `${styles.tariffs__left_label} ${styles.label__active}`
-									: styles.tariffs__left_label
+									? `${styles.tariffs__radio_btn_label} ${styles.label__active}`
+									: styles.tariffs__radio_btn_label
 							}
 							htmlFor="futures"
 						>
 							ф&apos;ючерс
 						</label>
-					</div>
-					<article className={`${styles.tariffs__left_card} ${styles.card_common}`}>
+					</form>
+					<article
+						data-aos="fade-right"
+						data-aos-delay="700"
+						className={`${styles.tariffs__left_card} ${styles.card_common}`}
+					>
 						<div className={styles.card__top_content}>
 							<span className={styles.card__title}>standart</span>
 							<ul className={styles.card__list}>
@@ -115,7 +119,11 @@ const Tariffs = () => {
 					</article>
 				</div>
 
-				<article className={`${styles.tariffs__right_card} ${styles.card_common}`}>
+				<article
+					data-aos="fade-left"
+					data-aos-delay="700"
+					className={`${styles.tariffs__right_card} ${styles.card_common}`}
+				>
 					<div className={styles.card__top_content}>
 						<span className={styles.card__title}>vip</span>
 						<ul className={styles.card__list}>

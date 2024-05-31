@@ -1,4 +1,4 @@
-@import '../../../scss/variables.scss';
+@import '../../scss/variables.scss';
 
 .section__tariffs {
 	background-color: $primary_black;
@@ -16,7 +16,7 @@
 			.tariffs__left_title {
 				margin-bottom: clamp(2.4rem, 6vw, 4rem);
 			}
-			.tariffs__left_inputs_wrapper {
+			.tariffs__radio_btn_wrapper {
 				display: flex;
 				justify-content: space-between;
 
@@ -29,13 +29,13 @@
 				background-color: rgba(106, 84, 255, 0.4);
 				border-radius: 0.4rem;
 
-				.tariffs__left_input {
+				.tariffs__radio_btn {
 					position: absolute;
 
 					z-index: -1;
 					opacity: 0;
 				}
-				.tariffs__left_label {
+				.tariffs__radio_btn_label {
 					display: flex;
 					align-items: center;
 					justify-content: center;
@@ -51,6 +51,20 @@
 
 					cursor: pointer;
 					transition: $hover_transition;
+
+					&.label__active {
+						cursor: not-allowed;
+						pointer-events: none;
+					}
+
+					@media (hover: hover) {
+						&:hover {
+							background-color: rgba(108, 143, 189, 0.293);
+							border-radius: 0.3rem;
+
+							transition: $hover_transition;
+						}
+					}
 				}
 
 				.label__active {
@@ -173,6 +187,13 @@
 					appearance: none;
 					-moz-appearance: none;
 					-webkit-appearance: none;
+					transition: $hover_transition;
+
+					@media (hover: hover) {
+						&:hover {
+							background-color: #ffffff77;
+						}
+					}
 
 					.card__dropdown_item {
 						color: black;

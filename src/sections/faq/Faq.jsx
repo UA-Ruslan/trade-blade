@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import styles from './faq.module.scss';
-import sprite from '../../../assets/images/sprites/sprite.svg';
-import { faqData } from '../../../static/faq-data';
+import sprite from '../../assets/images/sprites/sprite.svg';
+import { faqData } from '../../static/faq-data';
 
 const Faq = () => {
 	const [activeIndex, setActiveIndex] = useState(null);

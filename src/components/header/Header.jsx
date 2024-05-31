@@ -26,7 +26,7 @@ const Header = ({ setDropdownActive }) => {
 
 	return (
 		<header className={styles.header}>
-			<div className={`${styles.header__container} container`}>
+			<div data-aos="fade-down" className={`${styles.header__container} container`}>
 				<Logo transform={transform} width={'13.1rem'} height={'6.4rem'} />
 				<Navbar setDropdownActive={setDropdownActive} renderIn={'header'} />
 				<div className={styles.header__buttons_wrapper}>
