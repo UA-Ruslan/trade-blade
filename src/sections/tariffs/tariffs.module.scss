@@ -224,6 +224,12 @@
 				}
 			}
 
+			&:active {
+				.card__btn_subtitle {
+					color: $primary_black;
+				}
+			}
+
 			.card__btn_title {
 				z-index: 2;
 			}
