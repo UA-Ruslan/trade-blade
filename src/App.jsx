@@ -18,9 +18,11 @@ import Feedback from './sections/feedback/Feedback';
 
 import Aos from 'aos';
 import 'aos/dist/aos.css';
+import Preloader from './components/preloader/Preloader';
 
 function App() {
 	const [isDropdownActive, setDropdownActive] = useState(false);
+	const [isReadyState, setReadyState] = useState(false);
 
 	useEffect(() => {
 		const handleClick = (event) => {
@@ -42,26 +44,44 @@ function App() {
 		});
 	}, []);
 
+	useEffect(() => {
+		let interval;
+
+		if (!isReadyState) {
+			interval = setInterval(() => {
+				if (document.readyState === 'complete') {
+					setReadyState(true);
+				}
+			}, interval);
+
+			return () => clearInterval(interval);
+		}
+	}, [isReadyState]);
+
 	return (
 		<div className="app">
-			<Header setDropdownActive={setDropdownActive} />
-			<main className="main">
-				<QuickDealCopy />
-				<Numbers />
-				<PastDeals />
-				<AboutCompany />
-				<TradeBladeIts />
-				<HowToStart />
-				<Tariffs />
-				<Feedback />
-				<Faq />
-				<StartNow />
-			</main>
-
-			<DropdownBtn isDropdownActive={isDropdownActive} setDropdownActive={setDropdownActive} />
-			<DropdownMenu isDropdownActive={isDropdownActive} setDropdownActive={setDropdownActive} />
-
-			<Footer setDropdownActive={setDropdownActive} />
+			{isReadyState ? (
+				<>
+					<Header setDropdownActive={setDropdownActive} />
+					<main className="main">
+						<QuickDealCopy />
+						<Numbers />
+						<PastDeals />
+						<AboutCompany />
+						<TradeBladeIts />
+						<HowToStart />
+						<Tariffs />
+						<Feedback />
+						<Faq />
+						<StartNow />
+					</main>
+					<DropdownBtn isDropdownActive={isDropdownActive} setDropdownActive={setDropdownActive} />
+					<DropdownMenu isDropdownActive={isDropdownActive} setDropdownActive={setDropdownActive} />
+					<Footer setDropdownActive={setDropdownActive} />
+				</>
+			) : (
+				<Preloader />
+			)}
 		</div>
 	);
 }
