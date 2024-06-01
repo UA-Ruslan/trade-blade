@@ -1,5 +1,5 @@
 import styles from './quick-deal-copy.module.scss';
-import quickCopyImg from '../../assets/images/sections/quickDealCopy/quickDealCopy.png';
+import quickCopyImg from '../../assets/images/sections/quick-deal-copy/quickDealCopy.png';
 import Form from '../../components/form/Form';
 
 const QuickDealCopy = () => {

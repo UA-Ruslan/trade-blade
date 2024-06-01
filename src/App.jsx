@@ -14,6 +14,7 @@ import Tariffs from './sections/tariffs/Tariffs';
 import TradeBladeIts from './sections/trade-blade-its/Trade-blade-its';
 import HowToStart from './sections/how-to-start/How-to-start';
 import StartNow from './sections/start-now/Start-now';
+import Feedback from './sections/feedback/Feedback';
 
 import Aos from 'aos';
 import 'aos/dist/aos.css';
@@ -52,6 +53,7 @@ function App() {
 				<TradeBladeIts />
 				<HowToStart />
 				<Tariffs />
+				<Feedback />
 				<Faq />
 				<StartNow />
 			</main>
