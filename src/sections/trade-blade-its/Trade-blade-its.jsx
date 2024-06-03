@@ -5,7 +5,7 @@ import { cardData } from '../../static/trade-blade-card';
 
 const TradeBladeIts = () => {
 	return (
-		<section id="faq" className={styles.section__trade_blade_its}>
+		<section className={styles.section__trade_blade_its}>
 			<div className={`${styles.trade_blade_its__container} container`}>
 				<h2
 					data-aos="zoom-in"

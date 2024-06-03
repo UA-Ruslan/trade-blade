@@ -6,7 +6,7 @@ import user4 from '../../assets/images/sections/feedback/sanyaMnS.png';
 
 const Feedback = () => {
 	return (
-		<section className={styles.section__feedback}>
+		<section id="feedback" className={styles.section__feedback}>
 			<div className={`${styles.feedback__container} container`}>
 				<h2 className={styles.feedback__title}>Відгуки учасників ком&#39;юніті</h2>
 				<ul className={styles.feedback__card_list}>

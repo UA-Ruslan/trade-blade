@@ -30,7 +30,11 @@ const Navbar = ({ renderIn, setDropdownActive }) => {
 					</a>
 				</li>
 				<li className={styles.navbar_list_item}>
-					<a onClick={handleClick} className={`${styles.navbar_link} ${styles.navbar_link_common}`} href="#">
+					<a
+						onClick={handleClick}
+						className={`${styles.navbar_link} ${styles.navbar_link_common}`}
+						href="#past-deals"
+					>
 						угоди онлайн
 					</a>
 				</li>
@@ -44,7 +48,11 @@ const Navbar = ({ renderIn, setDropdownActive }) => {
 					</a>
 				</li>
 				<li className={styles.navbar_list_item}>
-					<a onClick={handleClick} className={`${styles.navbar_link} ${styles.navbar_link_common}`} href="#">
+					<a
+						onClick={handleClick}
+						className={`${styles.navbar_link} ${styles.navbar_link_common}`}
+						href="#how-to-start"
+					>
 						як почати
 					</a>
 				</li>
@@ -58,7 +66,11 @@ const Navbar = ({ renderIn, setDropdownActive }) => {
 					</a>
 				</li>
 				<li className={styles.navbar_list_item}>
-					<a onClick={handleClick} className={`${styles.navbar_link} ${styles.navbar_link_common}`} href="#">
+					<a
+						onClick={handleClick}
+						className={`${styles.navbar_link} ${styles.navbar_link_common}`}
+						href="#feedback"
+					>
 						відгуки
 					</a>
 				</li>

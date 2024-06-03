@@ -2,7 +2,7 @@ import styles from './how-to-start.module.scss';
 
 const HowToStart = () => {
 	return (
-		<section className={styles.section__how_to_start}>
+		<section id="how-to-start" className={styles.section__how_to_start}>
 			<div className={`${styles.how_to_start__container} container`}>
 				<div className={styles.how_to_start__content_wrapper}>
 					<h2 data-aos="fade-right" className={styles.how_to_start__title}>
