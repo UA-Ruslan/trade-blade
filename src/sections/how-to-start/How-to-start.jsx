@@ -19,7 +19,7 @@ const HowToStart = () => {
 						</li>
 						<li data-aos="fade-up" data-aos-delay="600" className={styles.how_to_start__card_list_item}>
 							<h3 className={styles.how_to_start__card_title}>Налаштуйте обліковий запис</h3>
-							<p>Вкажіть потрібні налаштування депозиту для кожного сигналу й натисніть 'Зберегти'.</p>
+							<p>Вкажіть потрібні налаштування депозиту для кожного сигналу й натисніть Зберегти.</p>
 						</li>
 						<li data-aos="fade-up" data-aos-delay="900" className={styles.how_to_start__card_list_item}>
 							<h3 className={styles.how_to_start__card_title}>Ваш копітрейдер запущено.</h3>
