@@ -10,21 +10,22 @@ const HowToStart = () => {
 					</h2>
 					<ul className={styles.how_to_start__card_list}>
 						<li data-aos="fade-up" className={styles.how_to_start__card_list_item}>
-							<h3 className={styles.how_to_start__card_title}>Создайте аккаунт</h3>
-							<p>Начните бесплатную 3-дневную пробную версию. Кредитная карта не требуется.</p>
+							<h3 className={styles.how_to_start__card_title}>Створіть обліковий запис</h3>
+							<p>Розпочніть із безкоштовною 3-денною пробною версією. Кредитна карта не потрібна</p>
 						</li>
 						<li data-aos="fade-up" data-aos-delay="300" className={styles.how_to_start__card_list_item}>
-							<h3 className={styles.how_to_start__card_title}>Подключить обмен API ключами</h3>
-							<p>Просто вставьте свои ключи API из личного кабинета.</p>
+							<h3 className={styles.how_to_start__card_title}>Провести обмін API ключами</h3>
+							<p>Просто вставте свої ключі API з особистого кабінету.</p>
 						</li>
 						<li data-aos="fade-up" data-aos-delay="600" className={styles.how_to_start__card_list_item}>
 							<h3 className={styles.how_to_start__card_title}>Налаштуйте обліковий запис</h3>
-							<p>Поставьте нужные настройки депозита на каждый сигнал и нажмите сохранить.</p>
+							<p>Вкажіть потрібні налаштування депозиту для кожного сигналу й натисніть 'Зберегти'.</p>
 						</li>
 						<li data-aos="fade-up" data-aos-delay="900" className={styles.how_to_start__card_list_item}>
-							<h3 className={styles.how_to_start__card_title}>Ваш копитрейдер запущен</h3>
+							<h3 className={styles.how_to_start__card_title}>Ваш копітрейдер запущено.</h3>
 							<p>
-								Просто расслабьтесь и начните получать пассивный доход от криптовалюты с помощью TradeBlade
+								Просто розслабтеся і почніть отримувати пасивний дохід від криптовалюти за допомогою
+								TradeBlade.
 							</p>
 						</li>
 					</ul>

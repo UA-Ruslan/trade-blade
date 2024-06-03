@@ -25,6 +25,7 @@
 				grid-template-columns: repeat(auto-fit, minmax(17rem, 1fr));
 
 				margin-bottom: clamp(4rem, 5vw, 5.6rem);
+				overflow: hidden;
 
 				.how_to_start__card_list_item {
 					position: relative;
